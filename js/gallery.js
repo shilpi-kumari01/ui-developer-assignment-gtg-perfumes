@@ -34,14 +34,9 @@ const thumbnailsContainer = document.getElementById('thumbnails-container');
 const prevBtn = document.getElementById('prev-btn');
 const nextBtn = document.getElementById('next-btn');
 
-/**
- * Initialize the gallery with dots and thumbnails
- */
 function initializeGallery() {
-    // Clear existing dots (if any)
     dotsContainer.innerHTML = '';
     
-    // Create dots
     galleryImages.forEach((_, index) => {
         const dot = document.createElement('div');
         dot.className = `dot ${index === 0 ? 'active' : ''}`;
@@ -50,25 +45,18 @@ function initializeGallery() {
         dotsContainer.appendChild(dot);
     });
 
-    // Update existing thumbnails (they are direct img elements, not wrappers)
     const thumbnails = thumbnailsContainer.querySelectorAll('img.thumbnail');
-    console.log('Found thumbnails:', thumbnails.length);
     
     thumbnails.forEach((thumbnail, index) => {
         if (index < galleryImages.length) {
-            console.log(`Updating thumbnail ${index} with:`, galleryImages[index].thumbnail);
-            
-            // Update thumbnail image source directly
             thumbnail.src = galleryImages[index].thumbnail;
             thumbnail.alt = `${galleryImages[index].title} - Thumbnail`;
             
             thumbnail.setAttribute('data-index', index);
             thumbnail.addEventListener('click', () => {
-                console.log('Clicked thumbnail', index);
                 goToImage(index);
             });
             
-            // Set active class if it's the first one
             if (index === 0) {
                 thumbnail.classList.add('active');
             }
@@ -76,9 +64,6 @@ function initializeGallery() {
     });
 }
 
-/**
- * Navigate to a specific image
- */
 function goToImage(index) {
     if (index >= galleryImages.length) {
         currentImageIndex = 0;
@@ -91,9 +76,6 @@ function goToImage(index) {
     updateImage();
 }
 
-/**
- * Update the main image and indicators
- */
 function updateImage() {
     const image = galleryImages[currentImageIndex];
     
@@ -102,21 +84,17 @@ function updateImage() {
         return;
     }
     
-    // Fade out effect
     mainImage.classList.add('fade-out');
     
     setTimeout(() => {
-        // Update main image with new URL
         mainImage.src = image.main;
         mainImage.alt = `GTG Perfumes - ${image.title}`;
         
-        // Force image reload
         mainImage.style.opacity = '0';
         mainImage.onload = function() {
             mainImage.style.opacity = '1';
         };
         
-        // Fallback if image doesn't load
         setTimeout(() => {
             mainImage.style.opacity = '1';
         }, 500);
@@ -129,7 +107,6 @@ function updateImage() {
         }, 300);
     }, 150);
 
-    // Update all dots
     const dots = document.querySelectorAll('.dot');
     dots.forEach((dot, index) => {
         if (index === currentImageIndex) {
@@ -139,7 +116,6 @@ function updateImage() {
         }
     });
 
-    // Update all thumbnails
     const thumbnails = document.querySelectorAll('.thumbnail');
     thumbnails.forEach((thumb, index) => {
         if (index === currentImageIndex) {
@@ -150,9 +126,6 @@ function updateImage() {
     });
 }
 
-/**
- * Event listeners for navigation buttons
- */
 if (prevBtn) {
     prevBtn.addEventListener('click', () => {
         goToImage(currentImageIndex - 1);

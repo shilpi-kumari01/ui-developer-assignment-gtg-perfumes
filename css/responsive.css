@@ -1,10 +1,3 @@
-/* ============================================
-   Responsive Design
-   ============================================ */
-
-/* ============================================
-   Tablets (768px - 1024px)
-   ============================================ */
 @media (max-width: 1024px) {
     .logo h1 {
         font-size: 1.5rem;
@@ -52,9 +45,6 @@
     }
 }
 
-/* ============================================
-   Mobile Tablets (768px and down)
-   ============================================ */
 @media (max-width: 768px) {
     .header-container {
         padding: 1rem 1.5rem;
@@ -74,7 +64,7 @@
 
     .hero {
         padding: 4rem 1rem;
-        min-height: 350px;
+        min-height: 350px !important;
     }
 
     .hero-content h2 {
@@ -254,9 +244,6 @@
     }
 }
 
-/* ============================================
-   Small Mobile (480px and down)
-   ============================================ */
 @media (max-width: 480px) {
     .logo h1 {
         font-size: 1.1rem;
@@ -411,9 +398,6 @@
     }
 }
 
-/* ============================================
-   Extra Small Mobile (320px and down)
-   ============================================ */
 @media (max-width: 320px) {
     .logo h1 {
         font-size: 1rem;
@@ -440,9 +424,6 @@
     }
 }
 
-/* ============================================
-   Print Styles
-   ============================================ */
 @media print {
     .header,
     .footer,
@@ -464,9 +445,6 @@
     }
 }
 
-/* ============================================
-   High DPI Screens (Retina)
-   ============================================ */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .main-image,
     .thumbnail img {
@@ -474,12 +452,10 @@
     }
 }
 
-/* ============================================
-   Landscape Mode Mobile
-   ============================================ */
+
 @media (max-height: 600px) and (orientation: landscape) {
     .hero {
-        min-height: auto;
+        min-height: 300px;
         padding: 2rem 1rem;
     }
 
@@ -498,9 +474,6 @@
     }
 }
 
-/* ============================================
-   Reduced Motion
-   ============================================ */
 @media (prefers-reduced-motion: reduce) {
     * {
         animation-duration: 0.01ms !important;
@@ -520,20 +493,17 @@
     }
 }
 
-/* ============================================
-   Dark Mode (System Preference)
-   ============================================ */
 @media (prefers-color-scheme: dark) {
     :root {
-        --text-dark: #FFFFFF;           /* Pure white for better contrast */
-        --text-light: #D0D0D0;          /* Lighter gray */
-        --text-main: #FFFFFF;           /* Main text - white */
-        --text-muted: #A0A0A0;          /* Muted text */
-        --bg-light: #0F1419;            /* Dark background */
-        --border-color: #404040;        /* Slightly lighter borders */
-        --white: #1a1a1a;              /* "White" in dark mode */
-        --primary: #5B9DF9;             /* Brighter blue for visibility */
-        --primary-hover: #4A8CE8;
+        --text-dark: #FFFFFF;           
+        --text-light: #D0D0D0;          
+        --text-main: #FFFFFF;           
+        --text-muted: #A0A0A0;          
+        --bg-light: #1f2730;            
+        --border-color: #404040;        
+        --white: #1a1a1a;             
+        --primary: #6ba6f8;             
+        --primary-hover: #70a7f5;
     }
 
     body {
@@ -552,11 +522,11 @@
     }
 
     .nav-list a:hover {
-        color: #5B9DF9;
+        color: #6a9fe9;
     }
 
     .product-description {
-        color: #D0D0D0;
+        color: #e9e5e5;
     }
 
     .mobile-menu {
@@ -576,7 +546,7 @@
 
     .radio-option:hover {
         background-color: #2a2a2a;
-        border-color: #5B9DF9;
+        border-color: #6fa7f5;
     }
 
     .subscription-details {
@@ -646,9 +616,7 @@
         outline: none;
     }
 }
-/* ============================================
-   About Page - Responsive
-   ============================================ */
+
 @media (max-width: 1024px) {
     .hero-about .hero-content h1 {
         font-size: 2.5rem;
@@ -736,9 +704,6 @@
     }
 }
 
-/* ============================================
-   Contact Page - Responsive
-   ============================================ */
 @media (max-width: 1024px) {
     .hero-contact .hero-content h1 {
         font-size: 2.5rem;
