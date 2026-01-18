@@ -1,0 +1,33 @@
+{
+  "name": "gtg-perfumes",
+  "version": "1.0.0",
+  "description": "A pixel-perfect, fully responsive webpage for GTG Perfumes built with vanilla HTML, CSS, and JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "npx http-server",
+    "build": "echo 'No build required for this vanilla project'",
+    "serve": "python -m http.server 8000"
+  },
+  "keywords": [
+    "perfume",
+    "responsive",
+    "e-commerce",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/gtg-perfumes"
+  },
+  "bugs": {
+    "url": "https://github.com/username/gtg-perfumes/issues"
+  },
+  "homepage": "https://github.com/username/gtg-perfumes#readme"
+}

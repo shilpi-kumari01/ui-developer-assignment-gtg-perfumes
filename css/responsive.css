@@ -1,0 +1,814 @@
+/* ============================================
+   Responsive Design
+   ============================================ */
+
+/* ============================================
+   Tablets (768px - 1024px)
+   ============================================ */
+@media (max-width: 1024px) {
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .nav-list {
+        gap: 1.5rem;
+    }
+
+    .nav-list a {
+        font-size: 0.95rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .product-container {
+        gap: 2rem;
+    }
+
+    .product-title {
+        font-size: 2rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .stat-card {
+        padding: 1.5rem;
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ============================================
+   Mobile Tablets (768px and down)
+   ============================================ */
+@media (max-width: 768px) {
+    .header-container {
+        padding: 1rem 1.5rem;
+    }
+
+    .logo h1 {
+        font-size: 1.3rem;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .hamburger-toggle {
+        display: flex;
+    }
+
+    .hero {
+        padding: 4rem 1rem;
+        min-height: 350px;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 0.85rem 2rem;
+        font-size: 0.95rem;
+    }
+
+    .product-section {
+        padding: 2rem 1rem;
+    }
+
+    .product-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    /* Gallery Responsive Styles */
+    .gallery-column {
+        width: 100%;
+    }
+
+    .gallery-main {
+        aspect-ratio: 1 / 1;
+        max-width: 100%;
+    }
+
+    .gallery-image,
+    .main-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .gallery-controls {
+        padding: 0 0.5rem;
+        gap: 0.75rem;
+    }
+
+    .gallery-arrow,
+    .arrow-btn {
+        padding: 0.65rem;
+        font-size: 1rem;
+    }
+
+    .gallery-thumbnails,
+    .thumbnails-container {
+        gap: 0.5rem;
+    }
+
+    .thumbnail {
+        width: 60px;
+        height: 60px;
+        min-width: 60px;
+    }
+
+    .image-selector {
+        margin-top: var(--spacing-sm);
+        padding: var(--spacing-sm);
+    }
+
+    .image-select-dropdown {
+        font-size: 0.9rem;
+        padding: 8px 10px;
+    }
+
+    .gallery-column {
+        gap: 1rem;
+    }
+
+    .main-image-wrapper {
+        aspect-ratio: 1;
+    }
+
+    .product-title {
+        font-size: 1.8rem;
+    }
+
+    .product-description {
+        font-size: 0.95rem;
+    }
+
+    .price {
+        font-size: 1.7rem;
+    }
+
+    .original-price {
+        font-size: 1rem;
+    }
+
+    .radio-group {
+        gap: 0.5rem;
+    }
+
+    .radio-group-title {
+        font-size: 1rem;
+    }
+
+    .radio-option {
+        padding: 0.5rem;
+    }
+
+    .add-to-cart-btn {
+        padding: 0.85rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    /* Stats Section */
+    .stats-section {
+        padding: 3rem 1rem;
+    }
+
+    .stats-container h2 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .stat-card {
+        padding: 1.25rem;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .stat-percent {
+        font-size: 1.2rem;
+    }
+
+    .stat-label {
+        font-size: 0.9rem;
+        margin-top: 0.75rem;
+    }
+
+    /* Table Section */
+    .table-section {
+        padding: 2rem 1rem;
+    }
+
+    .table-container h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .comparison-table {
+        font-size: 0.9rem;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 0.75rem 0.5rem;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .footer-section h3 {
+        font-size: 1.1rem;
+    }
+
+    .footer {
+        padding: 2rem 1rem 1rem;
+    }
+}
+
+/* ============================================
+   Small Mobile (480px and down)
+   ============================================ */
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 1.1rem;
+    }
+
+    .header-container {
+        padding: 0.75rem 1rem;
+    }
+
+    .hero {
+        padding: 3rem 1rem;
+        min-height: 280px;
+    }
+
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .product-section {
+        padding: 1.5rem 1rem;
+    }
+
+    .gallery-controls {
+        padding: 0;
+    }
+
+    .arrow-btn {
+        padding: 0.6rem;
+        font-size: 1rem;
+    }
+
+    .product-title {
+        font-size: 1.5rem;
+    }
+
+    .product-description {
+        font-size: 0.9rem;
+    }
+
+    .price {
+        font-size: 1.5rem;
+    }
+
+    .original-price {
+        font-size: 0.9rem;
+    }
+
+    .radio-option span {
+        font-size: 0.9rem;
+    }
+
+    .thumbnails-container {
+        gap: 0.5rem;
+    }
+
+    .thumbnail {
+        width: 60px;
+        height: 60px;
+    }
+
+    .subscription-details {
+        padding: 1rem;
+    }
+
+    .add-to-cart-btn {
+        padding: 0.75rem 1rem;
+        font-size: 0.95rem;
+    }
+
+    .product-features {
+        gap: 0.5rem;
+    }
+
+    .feature {
+        gap: 0.5rem;
+    }
+
+    .feature-icon {
+        font-size: 1.1rem;
+    }
+
+    /* Stats Section */
+    .stats-section {
+        padding: 2rem 1rem;
+    }
+
+    .stats-container h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .stat-number {
+        font-size: 1.8rem;
+    }
+
+    .stat-percent {
+        font-size: 1rem;
+    }
+
+    .stat-label {
+        font-size: 0.85rem;
+    }
+
+    /* Table Section */
+    .table-section {
+        padding: 1.5rem 0.5rem;
+    }
+
+    .table-container h2 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .comparison-table {
+        font-size: 0.8rem;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 0.6rem 0.4rem;
+    }
+
+    .comparison-table th {
+        font-size: 0.75rem;
+    }
+
+    /* Footer */
+    .footer-section h3 {
+        font-size: 1rem;
+    }
+
+    .footer-section p,
+    .footer-section ul li a {
+        font-size: 0.85rem;
+    }
+
+    .footer-bottom {
+        font-size: 0.8rem;
+    }
+
+    .footer {
+        padding: 1.5rem 0.5rem 0.5rem;
+    }
+}
+
+/* ============================================
+   Extra Small Mobile (320px and down)
+   ============================================ */
+@media (max-width: 320px) {
+    .logo h1 {
+        font-size: 1rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .product-title {
+        font-size: 1.3rem;
+    }
+
+    .stats-grid {
+        gap: 0.75rem;
+    }
+
+    .stat-card {
+        padding: 1rem;
+    }
+
+    .stat-number {
+        font-size: 1.5rem;
+    }
+}
+
+/* ============================================
+   Print Styles
+   ============================================ */
+@media print {
+    .header,
+    .footer,
+    .cta-button,
+    .add-to-cart-btn,
+    .hamburger-toggle,
+    .mobile-menu {
+        display: none;
+    }
+
+    body {
+        background-color: white;
+    }
+
+    .product-container,
+    .stats-grid,
+    .comparison-table {
+        break-inside: avoid;
+    }
+}
+
+/* ============================================
+   High DPI Screens (Retina)
+   ============================================ */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .main-image,
+    .thumbnail img {
+        image-rendering: -webkit-optimize-contrast;
+    }
+}
+
+/* ============================================
+   Landscape Mode Mobile
+   ============================================ */
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .main-image-wrapper {
+        aspect-ratio: 2;
+    }
+}
+
+/* ============================================
+   Reduced Motion
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .nav-list a::after,
+    .dot.active,
+    .thumbnail:hover img,
+    .arrow-btn:hover,
+    .cta-button:hover,
+    .add-to-cart-btn:hover {
+        transition: none;
+        transform: none;
+    }
+}
+
+/* ============================================
+   Dark Mode (System Preference)
+   ============================================ */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-dark: #FFFFFF;           /* Pure white for better contrast */
+        --text-light: #D0D0D0;          /* Lighter gray */
+        --text-main: #FFFFFF;           /* Main text - white */
+        --text-muted: #A0A0A0;          /* Muted text */
+        --bg-light: #0F1419;            /* Dark background */
+        --border-color: #404040;        /* Slightly lighter borders */
+        --white: #1a1a1a;              /* "White" in dark mode */
+        --primary: #5B9DF9;             /* Brighter blue for visibility */
+        --primary-hover: #4A8CE8;
+    }
+
+    body {
+        background-color: #0d0d0d;
+        color: #FFFFFF;
+    }
+
+    .header,
+    .comparison-table {
+        background-color: #1a1a1a;
+    }
+
+    .nav-list a {
+        color: #FFFFFF;
+        transition: color 0.2s ease;
+    }
+
+    .nav-list a:hover {
+        color: #5B9DF9;
+    }
+
+    .product-description {
+        color: #D0D0D0;
+    }
+
+    .mobile-menu {
+        background-color: #1a1a1a;
+        border-top-color: #404040;
+    }
+
+    .mobile-nav-list a {
+        color: #FFFFFF;
+        border-bottom-color: #404040;
+    }
+
+    .radio-option {
+        background-color: #252525;
+        border-color: #404040;
+    }
+
+    .radio-option:hover {
+        background-color: #2a2a2a;
+        border-color: #5B9DF9;
+    }
+
+    .subscription-details {
+        background-color: #1a1a1a;
+        border-color: #404040;
+    }
+
+    .subscription-detail-item {
+        border-bottom-color: #404040;
+    }
+
+    .product-title {
+        color: #FFFFFF;
+    }
+
+    .price {
+        color: #5B9DF9;
+    }
+
+    .option-main {
+        color: #FFFFFF;
+    }
+
+    .subscription-detail-label {
+        color: #D0D0D0;
+    }
+
+    .subscription-detail-value {
+        color: #5B9DF9;
+    }
+
+    /* Footer in dark mode */
+    .footer {
+        background-color: #0d0d0d;
+        border-top: 1px solid #404040;
+    }
+
+    .footer-section h3 {
+        color: #5B9DF9;
+    }
+
+    .footer-section p,
+    .footer-section ul li a {
+        color: #D0D0D0;
+    }
+
+    .footer-bottom {
+        border-top-color: #404040;
+        color: #A0A0A0;
+    }
+
+    /* Form elements in dark mode */
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+        background-color: #1a1a1a;
+        color: #FFFFFF;
+        border-color: #404040;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus,
+    select:focus {
+        border-color: #5B9DF9;
+        outline: none;
+    }
+}
+/* ============================================
+   About Page - Responsive
+   ============================================ */
+@media (max-width: 1024px) {
+    .hero-about .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .story-content h2,
+    .why-choose-container h2,
+    .values-container h2 {
+        font-size: 2rem;
+    }
+
+    .why-choose-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-about {
+        padding: 3rem 1.5rem;
+        min-height: 300px;
+    }
+
+    .hero-about .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-about .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .brand-story-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .story-content {
+        padding: 1.5rem;
+    }
+
+    .story-content h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .story-content p {
+        font-size: 1rem;
+    }
+
+    .why-choose-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .why-choose-container h2 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .why-choose-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .why-card {
+        padding: 1.5rem;
+    }
+
+    .values-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .values-container h2 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .closing-statement-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .closing-statement-container h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* ============================================
+   Contact Page - Responsive
+   ============================================ */
+@media (max-width: 1024px) {
+    .hero-contact .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact-container {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-contact {
+        padding: 3rem 1.5rem;
+        min-height: 300px;
+    }
+
+    .hero-contact .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-contact .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .contact-section {
+        padding: 2rem 1.5rem;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    .contact-info-column h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .contact-intro {
+        font-size: 1rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.65rem;
+        font-size: 1rem;
+    }
+
+    .contact-submit-btn {
+        padding: 0.85rem 2rem;
+        font-size: 1rem;
+    }
+
+    .success-content {
+        padding: 1.5rem;
+    }
+
+    .success-icon {
+        font-size: 2.5rem;
+    }
+
+    .success-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .success-content p {
+        font-size: 1rem;
+    }
+}

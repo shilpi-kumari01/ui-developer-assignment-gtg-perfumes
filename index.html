@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTG Perfumes - Premium Fragrances</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>GTG Perfumes</h1>
+            </div>
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger-toggle" id="hamburger-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="mobile-menu" id="mobile-menu">
+            <ul class="mobile-nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Discover Signature Luxury Fragrances</h2>
+            <p>Crafted with premium ingredients for a long-lasting impression</p>
+            <a href="#products" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="product-section" id="products">
+        <div class="product-container">
+            <!-- Left Column: Gallery -->
+            <div class="gallery-column">
+                <!--
+                Image Handling Strategy:
+                - Premium product images from Unsplash (production-ready)
+                - Lazy loading for performance optimization
+                - Fully responsive and mobile-optimized
+                - Scalable structure for future products
+                -->
+                <div class="product-gallery">
+                    <!-- Main Image with Lazy Loading -->
+                    <div class="gallery-main">
+                        <img 
+                            src="assets/Main-Image.avif"
+                            alt="GTG Perfumes - Premium Luxury Fragrance Bottle"
+                            class="gallery-image"
+                            loading="lazy"
+                        />
+                    </div>
+
+                    <!-- Navigation Arrows -->
+                    <div class="gallery-controls">
+                        <button class="gallery-arrow prev-btn" id="prev-btn" aria-label="Previous image">
+                            <span>❮</span>
+                        </button>
+                        <button class="gallery-arrow next-btn" id="next-btn" aria-label="Next image">
+                            <span>❯</span>
+                        </button>
+                    </div>
+
+                    <!-- Dots Navigation -->
+                    <div class="dots-container" id="dots-container"></div>
+
+                    <!-- Thumbnails with Lazy Loading -->
+                    <div class="gallery-thumbnails" id="thumbnails-container">
+                        <img 
+                            src="assets/img1.jpg"
+                            alt="Perfume Product - Rose Elegance"
+                            class="thumbnail active"
+                            loading="lazy"
+                        >
+                        <img 
+                            src="assets/img2.jpg"
+                            alt="Perfume Product - Vanilla Sunset"
+                            class="thumbnail"
+                            loading="lazy"
+                        >
+                        <img 
+                            src="assets/img3.jpg"
+                            alt="Perfume Product - Ocean Breeze"
+                            class="thumbnail"
+                            loading="lazy"
+                        >
+                        <img 
+                            src="assets/img4.jpeg"
+                            alt="Perfume Product - Luxury Essence"
+                            class="thumbnail"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <!-- Image Selection Option -->
+                    <div class="image-selector">
+                        <label for="image-select" style="font-size: 0.9rem; color: var(--text-muted); font-weight: 500; margin-bottom: 8px; display: block;">
+                            Change Main Display Image:
+                        </label>
+                        <select id="image-select" class="image-select-dropdown">
+                            <option value="0">Main Image</option>
+                            <option value="1">Vanilla Sunset</option>
+                            <option value="2">Ocean Breeze</option>
+                            <option value="3">Luxury Essence</option>
+                        </select>
+                    </div>
+                </div>
+
+            <!-- Right Column: Product Info -->
+            <div class="product-info-column">
+                <h2 class="product-title">Premium Fragrance Collection</h2>
+                <p class="product-description">
+                    Discover our signature luxury fragrances crafted with premium ingredients for a long-lasting impression. Each scent is carefully formulated with expert craftsmanship to elevate your everyday moments.
+                </p>
+
+                <!-- Price Section -->
+                <div class="price-section">
+                    <div class="price-wrapper">
+                        <span class="original-price">$129.99</span>
+                        <span class="price">$89.99</span>
+                    </div>
+                    <span class="discount-badge">Save 30%</span>
+                </div>
+
+                <!-- Radio Group 1: Fragrances -->
+                <div class="radio-group">
+                    <label class="radio-group-title">Choose a scent that matches your personality</label>
+                    <div class="radio-options">
+                        <label class="radio-option">
+                            <input type="radio" name="fragrance" value="rose" checked>
+                            <span>Rose Elegance</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="fragrance" value="vanilla">
+                            <span>Vanilla Sunset</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="fragrance" value="ocean">
+                            <span>Ocean Breeze</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Radio Group 2: Purchase Type -->
+                <div class="radio-group">
+                    <label class="radio-group-title">Select how you want to buy and save more</label>
+                    <div class="radio-options">
+                        <label class="radio-option">
+                            <input type="radio" name="purchase-type" value="single" checked>
+                            <div class="option-content">
+                                <span class="option-main">Single Purchase</span>
+                            </div>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="purchase-type" value="single-sub">
+                            <div class="option-content">
+                                <span class="option-main">Single Subscription</span>
+                                <span class="option-badge">Save 20%</span>
+                            </div>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="purchase-type" value="double-sub">
+                            <div class="option-content">
+                                <span class="option-main">2 bottles every month</span>
+                                <span class="option-badge">Save 30%</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Expandable Subscription Sections -->
+                <div id="subscription-details" class="subscription-details"></div>
+
+                <!-- Add to Cart Button -->
+                <div class="add-to-cart-section">
+                    <a href="https://example.com/cart/rose-single" class="add-to-cart-btn" id="add-to-cart-btn">
+                        Add to Cart
+                    </a>
+                    <div class="selected-fragrance" id="selected-fragrance">
+                        Selected: Rose Elegance + Single Purchase
+                    </div>
+                </div>
+
+                <!-- Product Features -->
+                <div class="product-features">
+                    <div class="feature">
+                        <span class="feature-icon">✓</span>
+                        <span>Free Shipping on Orders Over $50</span>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">✓</span>
+                        <span>30-Day Money-Back Guarantee</span>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">✓</span>
+                        <span>Satisfaction Guaranteed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Percentage Statistics Section -->
+    <section class="stats-section" id="stats">
+        <div class="stats-container">
+            <h2>Why Choose GTG Perfumes</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="84">0</div>
+                    <span class="stat-percent">%</span>
+                    <p class="stat-label">Customer Satisfaction Rate</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="78">0</div>
+                    <span class="stat-percent">%</span>
+                    <p class="stat-label">Made With Premium Ingredients</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="92">0</div>
+                    <span class="stat-percent">%</span>
+                    <p class="stat-label">Trusted by Repeat Customers</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="88">0</div>
+                    <span class="stat-percent">%</span>
+                    <p class="stat-label">Strict Quality Assurance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Comparison Table -->
+    <section class="table-section">
+        <div class="table-container">
+            <h2>Product Comparison</h2>
+            <p class="table-description">Compare our fragrances to find the perfect match for you</p>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Rose Elegance</th>
+                        <th>Vanilla Sunset</th>
+                        <th>Ocean Breeze</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Longevity</td>
+                        <td>8-10 Hours</td>
+                        <td>10-12 Hours</td>
+                        <td>6-8 Hours</td>
+                    </tr>
+                    <tr>
+                        <td>Projection</td>
+                        <td>Moderate</td>
+                        <td>Strong</td>
+                        <td>Soft</td>
+                    </tr>
+                    <tr>
+                        <td>Best For</td>
+                        <td>Evening Wear</td>
+                        <td>All Day Wear</td>
+                        <td>Casual Wear</td>
+                    </tr>
+                    <tr>
+                        <td>Bottle Size</td>
+                        <td>100ml</td>
+                        <td>100ml</td>
+                        <td>100ml</td>
+                    </tr>
+                    <tr>
+                        <td>Price</td>
+                        <td>$89.99</td>
+                        <td>$89.99</td>
+                        <td>$89.99</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>GTG Perfumes is dedicated to crafting premium fragrances using carefully selected ingredients and expert craftsmanship. Every bottle is a testament to our commitment to luxury and quality.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Email: info@gtgperfumes.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 GTG Perfumes. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/gallery.js"></script>
+    <script src="js/radio-handler.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/mobile-menu.js"></script>
+</body>
+</html>
